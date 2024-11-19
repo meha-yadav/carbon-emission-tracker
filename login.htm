@@ -1,0 +1,29 @@
+<html>
+<head>
+   <style>
+      body {
+         color: blue;
+         transition: color 0.3s ease; /* Smooth transition for color change */
+      }
+      #hoverText {
+         cursor: pointer;
+         color: inherit;
+         font-weight: bold;
+      }
+   </style>
+</head>
+<body>
+   <h2>Change the font color using JavaScript</h2>
+   <div id="fonts">
+      Hover over this text to change the color of the font of the whole body: 
+      <span id="hoverText" onmouseover="changeFontColor('pink')" onmouseout="changeFontColor('blue')">Hover me!</span>
+   </div>
+   <script>
+      function changeFontColor(color) {
+         // Change the body text color based on the passed parameter
+         document.body.style.color = color;
+      }
+   </script>
+</body>
+</html>
+
